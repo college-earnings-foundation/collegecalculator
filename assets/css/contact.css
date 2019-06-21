@@ -168,6 +168,33 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-body {
-  background: pink;
+body nav,
+body footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body nav .title,
+body footer .title {
+  width: 15vw;
+  height: 10vw;
+}
+body nav .logo,
+body footer .logo {
+  width: 8vw;
+  height: 8vw;
+}
+body nav a,
+body footer a {
+  text-decoration: none;
+}
+body nav a nav-item,
+body footer a nav-item {
+  font-size: 20px;
+}
+body .copyright {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-size: 15px;
 }
