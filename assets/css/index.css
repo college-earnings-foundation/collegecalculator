@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -167,7 +167,33 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  background: #79b791;
 }
+<<<<<<< HEAD
+body {
+  background: #edf4ed;
+}
+.container .cta {
+  margin: 5% 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .cta .cta-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+.container .cta .cta-card .top {
+  display: flex;
+  justify-content: space-between;
+}
+.container .cta .img-container {
+  height: 50px;
+}
+.container .cta .img-container img {
+  height: 50px;
+=======
 body nav,
 body footer {
   width: 100%;
@@ -308,4 +334,5 @@ body .copyright {
   justify-content: center;
   padding: 20px;
   font-size: 15px;
+>>>>>>> 5ef9c432d69e1affd831047eb967fee501283293
 }
