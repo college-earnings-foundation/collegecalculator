@@ -167,15 +167,12 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  background: #79b791;
-  padding-top: 250px;
+  padding: 10px;
+  background: #edf4ed;
+  margin-top: 30px;
 }
 body {
-  background: #edf4ed;
-}
-body nav {
-  position: fixed;
-  margin-bottom: 0px;
+  background: #79b791;
 }
 body nav,
 body footer {
@@ -316,20 +313,32 @@ body footer a nav-item:active {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .container .cta .cta-card {
+  border: 2px solid #301014;
+  box-shadow: 8px 8px 20px #301014;
+  background: #edf4ed;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 45%;
 }
 .container .cta .cta-card .top {
+  width: 100%;
+  margin-bottom: 10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .container .cta .img-container {
   height: 50px;
 }
 .container .cta .img-container img {
+  border-radius: 5px;
   height: 50px;
 }
 body footer {
