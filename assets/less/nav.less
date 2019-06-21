@@ -18,6 +18,24 @@ body {
     padding: 20px 0px;
     margin: 20px 0px;
 
+    @media @mobile {
+
+      height: 120px;
+      padding: 2px;
+    }
+
+    .logostamp {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%;
+
+      @media @tablet {
+        justify-content: flex-end;
+        width: 25%;
+      }
+    }
+
     &,
     .title,
     .logo {
@@ -36,12 +54,39 @@ body {
       width: 15vw;
       height: 10vw;
       border-radius: 20px;
+
+      @media @tablet {
+        display: none;
+      }
     }
 
     .logo {
       width: 8vw;
       height: 8vw;
       border-radius: 50%;
+
+      @media @tablet {
+        height: 65px;
+        width: 65px;
+      }
+    }
+
+    navbar {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%;
+
+      @media @tablet {
+        justify-content: flex-start;
+      }
+
+      @media @mobile {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+      }
     }
 
     a {
@@ -56,6 +101,15 @@ body {
         box-shadow: 2px 2px 5px @font-color;
         border-radius: 5px;
         padding: 15px 5px;
+
+        @media @tablet {
+          padding: 5px;
+          margin: 5px;
+        }
+
+        @media @mobile {
+          font-size: 15px;
+        }
 
         &:hover {
           background: @blue;
