@@ -168,42 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
   background: #79b791;
+  padding-top: 150px;
 }
-<<<<<<< HEAD
 body {
   background: #edf4ed;
 }
-.container .cta {
-  margin: 5% 0;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
+body nav {
+  position: fixed;
+  margin-bottom: 0px;
 }
-.container .cta .cta-card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 45%;
-}
-.container .cta .cta-card .top {
-  display: flex;
-  justify-content: space-between;
-}
-.container .cta .img-container {
-  height: 50px;
-}
-.container .cta .img-container img {
-  height: 50px;
-=======
 body nav,
 body footer {
   width: 100%;
-  background: #c4d6b0;
+  background: #477998;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0px;
-  margin: 20px 0px;
 }
 @media (max-width:500px) {
   body nav,
@@ -329,10 +311,33 @@ body footer a nav-item:active {
   border: 2px solid #301014;
   box-shadow: none;
 }
+.container .cta {
+  margin: 5% 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .cta .cta-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+.container .cta .cta-card .top {
+  display: flex;
+  justify-content: space-between;
+}
+.container .cta .img-container {
+  height: 50px;
+}
+.container .cta .img-container img {
+  height: 50px;
+}
+body footer {
+  margin: 20px 0px;
+}
 body .copyright {
   display: flex;
   justify-content: center;
   padding: 20px;
   font-size: 15px;
->>>>>>> 5ef9c432d69e1affd831047eb967fee501283293
 }
