@@ -179,6 +179,27 @@ body footer {
   padding: 20px 0px;
   margin: 20px 0px;
 }
+@media (max-width:500px) {
+  body nav,
+  body footer {
+    height: 120px;
+    padding: 2px;
+  }
+}
+body nav .logostamp,
+body footer .logostamp {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width:800px) {
+  body nav .logostamp,
+  body footer .logostamp {
+    justify-content: flex-end;
+    width: 25%;
+  }
+}
 body nav,
 body footer,
 body nav .title,
@@ -200,11 +221,46 @@ body footer .title {
   height: 10vw;
   border-radius: 20px;
 }
+@media (max-width:800px) {
+  body nav .title,
+  body footer .title {
+    display: none;
+  }
+}
 body nav .logo,
 body footer .logo {
   width: 8vw;
   height: 8vw;
   border-radius: 50%;
+}
+@media (max-width:800px) {
+  body nav .logo,
+  body footer .logo {
+    height: 65px;
+    width: 65px;
+  }
+}
+body nav navbar,
+body footer navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width:800px) {
+  body nav navbar,
+  body footer navbar {
+    justify-content: flex-start;
+  }
+}
+@media (max-width:500px) {
+  body nav navbar,
+  body footer navbar {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
 }
 body nav a,
 body footer a {
@@ -220,6 +276,19 @@ body footer a nav-item {
   box-shadow: 2px 2px 5px #301014;
   border-radius: 5px;
   padding: 15px 5px;
+}
+@media (max-width:800px) {
+  body nav a nav-item,
+  body footer a nav-item {
+    padding: 5px;
+    margin: 5px;
+  }
+}
+@media (max-width:500px) {
+  body nav a nav-item,
+  body footer a nav-item {
+    font-size: 15px;
+  }
 }
 body nav a nav-item:hover,
 body footer a nav-item:hover {
