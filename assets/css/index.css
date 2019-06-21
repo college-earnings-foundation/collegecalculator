@@ -167,20 +167,32 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+<<<<<<< HEAD
+=======
+  background: #79b791;
+  padding-top: 150px;
+>>>>>>> 9e1bd7ed52596d04e5f89366145f27ccd80f8d30
 }
 body {
+<<<<<<< HEAD
+  background: #edf4ed;
+}
+body nav {
+  position: fixed;
+  margin-bottom: 0px;
+=======
   background: #79b791;
+>>>>>>> d157e909137c09595fd456af0e974c662001effa
 }
 body nav,
 body footer {
   width: 100%;
-  background: #c4d6b0;
+  background: #477998;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0px;
-  margin: 20px 0px;
 }
 @media (max-width:500px) {
   body nav,
@@ -311,6 +323,16 @@ body footer a nav-item:active {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+<<<<<<< HEAD
+}
+.container .cta .cta-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+.container .cta .cta-card .top {
+  display: flex;
+=======
   justify-content: center;
 }
 .container .cta .cta-card {
@@ -330,6 +352,7 @@ body footer a nav-item:active {
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
+>>>>>>> d157e909137c09595fd456af0e974c662001effa
   justify-content: space-between;
 }
 .container .cta .img-container {
@@ -339,6 +362,12 @@ body footer a nav-item:active {
   border-radius: 5px;
   height: 50px;
 }
+<<<<<<< HEAD
+body footer {
+  margin: 20px 0px;
+}
+=======
+>>>>>>> d157e909137c09595fd456af0e974c662001effa
 body .copyright {
   display: flex;
   justify-content: center;
