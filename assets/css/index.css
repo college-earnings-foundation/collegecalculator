@@ -173,6 +173,13 @@ img {
 body {
   background: #79b791;
 }
+header {
+  display: flex;
+  flex-direction: column;
+}
+header .header-botttom {
+  display: flex;
+}
 body nav,
 body footer {
   width: 100%;
@@ -312,35 +319,36 @@ body footer a nav-item:active {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 750px;
 }
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
   background: burlywood;
   border-radius: 10px;
-  margin: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 28%;
+  width: 32%;
 }
-.container .cta .cta-card .top {
+.container .cta .cta-card .cta-top {
   width: 100%;
   height: 65px;
-  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   background: #edf4ed;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   margin: 1px;
 }
-.container .cta .cta-card .top h4 {
+.container .cta .cta-card .cta-top h4 {
   padding: 5px 0 0 5px;
 }
-.container .cta .cta-card .top img {
+.container .cta .cta-card .cta-top img {
   padding: 15px;
 }
 .container .cta .cta-text {
