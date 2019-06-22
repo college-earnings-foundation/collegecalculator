@@ -164,12 +164,11 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 10px;
   background: #edf4ed;
-  margin-top: 30px;
 }
 body {
   background: #79b791;
@@ -318,28 +317,42 @@ body footer a nav-item:active {
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
-  background: #edf4ed;
+  background: burlywood;
   border-radius: 10px;
-  padding: 2%;
   margin: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 25%;
+  width: 28%;
 }
 .container .cta .cta-card .top {
   width: 100%;
+  height: 65px;
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background: #edf4ed;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 1px;
 }
-.container .cta .img-container {
-  height: 50px;
+.container .cta .cta-card .top h4 {
+  padding: 5px 0 0 5px;
 }
-.container .cta .img-container img {
-  border-radius: 5px;
-  height: 50px;
+.container .cta .cta-card .top img {
+  padding: 15px;
+}
+.container .cta .cta-text {
+  padding: 2%;
+}
+.container .cta .logo-img-container {
+  margin-top: 2px;
+  height: 70px;
+}
+.container .cta .logo-img-container img {
+  border-radius: 40px;
+  height: 70px;
 }
 body footer {
   margin: 20px 0px;

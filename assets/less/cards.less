@@ -4,27 +4,42 @@
   .cta-card {
     border: 2px solid @eggplant;
     box-shadow: 8px 8px 20px #301014;
-    background: @white;
+    background: burlywood;
     border-radius: 10px;
-    padding: 2%;
     margin: 2%;
     .flexbox();
     justify-content: space-between;
-    width: 25%;
+    width: 28%;
     .top {
       width: 100%;
+      height: 65px;
       margin-bottom: 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      background: @white;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      margin: 1px;
+      h4 {
+        padding: 5px 0 0 5px;
+      }
+      img {
+        padding: 15px;
+      }
     }
   }
 
-  .img-container {
-    height: 50px;
+  .cta-text {
+    padding: 2%;
+  }
+
+  .logo-img-container {
+    margin-top: 2px;
+    height: 70px;
     img {
-      border-radius: 5px;
-      height: 50px;
+      border-radius: 40px;
+      height: 70px;
     }
   }
 }
