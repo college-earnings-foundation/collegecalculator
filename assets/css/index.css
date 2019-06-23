@@ -344,6 +344,21 @@ body footer a nav-item:active {
   align-content: space-between;
   height: 750px;
 }
+@media (max-width:1000px) {
+  .container .cta {
+    height: 900px;
+  }
+}
+@media (max-width:800px) {
+  .container .cta {
+    height: 1200px;
+  }
+}
+@media (max-width:500px) {
+  .container .cta {
+    height: 1500px;
+  }
+}
 .container .cta .card7 {
   margin: 0 auto;
 }
@@ -355,7 +370,17 @@ body footer a nav-item:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 32%;
+  max-width: 32%;
+}
+@media (max-width:1000px) {
+  .container .cta .cta-card {
+    max-width: 47%;
+  }
+}
+@media (max-width:500px) {
+  .container .cta .cta-card {
+    max-width: 100%;
+  }
 }
 .container .cta .cta-card .cta-top {
   width: 100%;
@@ -369,8 +394,26 @@ body footer a nav-item:active {
   border-top-right-radius: 8px;
   margin: 1px;
 }
+@media (max-width:800px) {
+  .container .cta .cta-card .cta-top {
+    height: 90px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+@media (max-width:500px) {
+  .container .cta .cta-card .cta-top {
+    height: 65px;
+    flex-direction: row;
+  }
+}
 .container .cta .cta-card .cta-top h4 {
   padding: 5px 0 0 5px;
+}
+@media (max-width:800px) {
+  .container .cta .cta-card .cta-top h4 {
+    font-size: 2rem;
+  }
 }
 .container .cta .cta-card .cta-top img {
   padding: 15px;
