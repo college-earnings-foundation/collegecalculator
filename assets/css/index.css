@@ -174,11 +174,32 @@ body {
   background: #79b791;
 }
 header {
+  height: 500px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  border: double 5px #301014;
+  background: #c4d6b0;
 }
-header .header-botttom {
+header h1 {
+  margin: 0 auto;
+}
+header .header-bottom {
   display: flex;
+  justify-content: space-around;
+}
+header .header-img-container {
+  height: 400px;
+  max-width: 60%;
+}
+header .header-img-container img {
+  height: 400px;
+  border-radius: 20px;
+}
+header p {
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-start;
 }
 body nav,
 body footer {
@@ -323,14 +344,17 @@ body footer a nav-item:active {
   align-content: space-between;
   height: 750px;
 }
+.container .cta .card7 {
+  margin: 0 auto;
+}
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
-  background: burlywood;
+  background: #c4d6b0;
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 32%;
 }
 .container .cta .cta-card .cta-top {
