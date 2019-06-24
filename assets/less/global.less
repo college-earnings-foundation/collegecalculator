@@ -45,75 +45,87 @@ img {
   height: auto;
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  background: @white;
-}
-
 body {
   background: @green;
-}
 
-header {
-  height: 550px;
-
-  @media @tablet {
-    height: 750px;
-    justify-content: flex-start;
-  }
-
-  @media @mobile {
-    height: 700px;
-  }
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: double 5px @eggplant;
-  background: @lt-green;
-
-  h1 {
-    margin: 0 auto;
+  .container {
+    max-width: 95vw;
+    width: 100%;
+    margin: 195px auto 10px;
+    padding: 15px;
+    background: @white;
+    border-radius: 10px;
+    border: 1px solid black;
 
     @media @tablet {
-      margin: 15px auto;
+      margin: 120px auto;
+    }
+
+    @media @mobile {
+      margin: 10px auto;
     }
   }
 
-  .header-bottom {
+  header {
+    //height: 550px;
+
+    @media @tablet {
+      // height: 750px;
+      justify-content: flex-start;
+    }
+
+    @media @mobile {
+      // height: 700px;
+    }
+
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    border: double 5px @eggplant;
+    background: @lt-green;
+    border-radius:10px;
 
-    @media @tablet {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+    h1 {
+      margin: 5px auto;
 
-  .header-img-container {
-    height: auto;
-    max-width: 60%;
-
-    @media @tablet {
-      max-width: 98%;
+      @media @tablet {
+        margin: 15px auto;
+      }
     }
 
-    img {
-      border-radius: 20px;
+    .header-bottom {
+      display: flex;
+      justify-content: space-around;
+      margin: 10px;
+
+      @media @tablet {
+        flex-direction: column;
+        align-items: center;
+      }
     }
-  }
 
-  p {
-    max-width: 35%;
+    .header-img-container {
+      max-height: 90%;
+      max-width: 60%;
 
-    @media @tablet {
-      max-width: 98%;
+      @media @tablet {
+        max-width: 98%;
+      }
+
+      img {
+        border-radius: 20px;
+      }
     }
 
-    display: flex;
-    justify-content: flex-start;
+    p {
+      max-width: 35%;
+
+      @media @tablet {
+        max-width: 98%;
+      }
+
+      display: flex;
+      justify-content: flex-start;
+    }
   }
 }

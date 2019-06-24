@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .flexbox-container {
-  margin: 5% 0;
+  margin: 10px 0;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -173,72 +173,81 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  background: #edf4ed;
-}
 body {
   background: #79b791;
 }
-header {
-  height: 550px;
+body .container {
+  max-width: 95vw;
+  width: 100%;
+  margin: 195px auto 10px;
+  padding: 15px;
+  background: #edf4ed;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+@media (max-width:800px) {
+  body .container {
+    margin: 120px auto;
+  }
+}
+@media (max-width:515px) {
+  body .container {
+    margin: 10px auto;
+  }
+}
+body header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border: double 5px #301014;
   background: #c4d6b0;
+  border-radius: 10px;
 }
 @media (max-width:800px) {
-  header {
-    height: 750px;
+  body header {
     justify-content: flex-start;
   }
 }
 @media (max-width:515px) {
-  header {
-    height: 700px;
-  }
 }
-header h1 {
-  margin: 0 auto;
+body header h1 {
+  margin: 5px auto;
 }
 @media (max-width:800px) {
-  header h1 {
+  body header h1 {
     margin: 15px auto;
   }
 }
-header .header-bottom {
+body header .header-bottom {
   display: flex;
   justify-content: space-around;
+  margin: 10px;
 }
 @media (max-width:800px) {
-  header .header-bottom {
+  body header .header-bottom {
     flex-direction: column;
     align-items: center;
   }
 }
-header .header-img-container {
-  height: auto;
+body header .header-img-container {
+  max-height: 90%;
   max-width: 60%;
 }
 @media (max-width:800px) {
-  header .header-img-container {
+  body header .header-img-container {
     max-width: 98%;
   }
 }
-header .header-img-container img {
+body header .header-img-container img {
   border-radius: 20px;
 }
-header p {
+body header p {
   max-width: 35%;
   display: flex;
   justify-content: flex-start;
 }
 @media (max-width:800px) {
-  header p {
+  body header p {
     max-width: 98%;
   }
 }
@@ -376,51 +385,47 @@ body footer a nav-item:active {
   border: 2px solid #301014;
   box-shadow: none;
 }
+body nav {
+  position: fixed;
+  margin-top: -10px;
+}
+@media (max-width:515px) {
+  body nav {
+    position: relative;
+    margin-top: -10px;
+  }
+}
 .container .cta {
-  margin: 5% 0;
+  margin: 10px 0;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-content: space-between;
-  height: 750px;
-}
-@media (max-width:1000px) {
-  .container .cta {
-    height: 900px;
-  }
-}
-@media (max-width:800px) {
-  .container .cta {
-    height: 1200px;
-  }
-}
-@media (max-width:515px) {
-  .container .cta {
-    height: 1500px;
-  }
-}
-.container .cta .card7 {
-  margin: 0 auto;
 }
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
   background: #c4d6b0;
   border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  width: 32%;
   justify-content: space-around;
   max-width: 32%;
 }
-@media (max-width:1000px) {
+@media (max-width:800px) {
   .container .cta .cta-card {
     max-width: 47%;
+    width: 47%;
   }
 }
 @media (max-width:515px) {
   .container .cta .cta-card {
     max-width: 100%;
+    width: 100%;
   }
 }
 .container .cta .cta-card .cta-top {
@@ -478,4 +483,58 @@ body .copyright {
   justify-content: center;
   padding: 20px;
   font-size: 15px;
+}
+@media (min-width:801px) {
+  .opener {
+    height: 100vh;
+    width: 100vw;
+    animation-name: example;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes example {
+    0% {
+      height: 100%;
+      width: 75%;
+      margin-left: 15%;
+    }
+    25% {
+      height: 25%;
+      width: 50%;
+      transform: rotate(90deg);
+    }
+    65% {
+      height: 50%;
+      width: 75%;
+      transform: rotate(180deg);
+      margin-left: 20%;
+    }
+    100% {
+      height: 0%;
+      width: 0%;
+      transform: rotate(360deg);
+      margin-left: 0%;
+    }
+  }
+}
+@media (max-width:800px) {
+  .opener {
+    height: 100vh;
+    width: 98vw;
+    animation-name: small;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes small {
+    0% {
+      height: 100vh;
+    }
+    100% {
+      height: 0vh;
+    }
+  }
 }
