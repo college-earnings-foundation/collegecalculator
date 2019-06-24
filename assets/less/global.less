@@ -59,47 +59,60 @@ body {
 
 header {
   height: 550px;
+
   @media @tablet {
     height: 750px;
     justify-content: flex-start;
   }
+
   @media @mobile {
     height: 700px;
   }
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border: double 5px @eggplant;
   background: @lt-green;
+
   h1 {
     margin: 0 auto;
+
     @media @tablet {
       margin: 15px auto;
     }
   }
+
   .header-bottom {
     display: flex;
     justify-content: space-around;
+
     @media @tablet {
       flex-direction: column;
       align-items: center;
     }
   }
+
   .header-img-container {
     height: auto;
     max-width: 60%;
+
     @media @tablet {
       max-width: 98%;
     }
+
     img {
       border-radius: 20px;
     }
   }
+
   p {
     max-width: 35%;
+
     @media @tablet {
       max-width: 98%;
     }
+
     display: flex;
     justify-content: flex-start;
   }

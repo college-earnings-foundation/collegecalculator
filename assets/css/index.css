@@ -1,3 +1,13 @@
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexbox-container {
+  margin: 5% 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -187,7 +197,7 @@ header {
     justify-content: flex-start;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   header {
     height: 700px;
   }
@@ -242,7 +252,7 @@ body footer {
   align-items: center;
   padding: 20px 0px;
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav,
   body footer {
     height: 120px;
@@ -316,7 +326,7 @@ body footer navbar {
     justify-content: flex-start;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav navbar,
   body footer navbar {
     flex-direction: column;
@@ -347,7 +357,7 @@ body footer a nav-item {
     margin: 5px;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav a nav-item,
   body footer a nav-item {
     font-size: 15px;
@@ -385,7 +395,7 @@ body footer a nav-item:active {
     height: 1200px;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   .container .cta {
     height: 1500px;
   }
@@ -408,7 +418,7 @@ body footer a nav-item:active {
     max-width: 47%;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   .container .cta .cta-card {
     max-width: 100%;
   }
@@ -432,7 +442,7 @@ body footer a nav-item:active {
     flex-direction: column;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   .container .cta .cta-card .cta-top {
     height: 65px;
     flex-direction: row;

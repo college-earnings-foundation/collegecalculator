@@ -1,3 +1,13 @@
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexbox-container {
+  margin: 5% 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,15 +174,73 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 10px;
   background: #edf4ed;
-  margin-top: 30px;
 }
 body {
   background: #79b791;
+}
+header {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: double 5px #301014;
+  background: #c4d6b0;
+}
+@media (max-width:800px) {
+  header {
+    height: 750px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width:515px) {
+  header {
+    height: 700px;
+  }
+}
+header h1 {
+  margin: 0 auto;
+}
+@media (max-width:800px) {
+  header h1 {
+    margin: 15px auto;
+  }
+}
+header .header-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width:800px) {
+  header .header-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .header-img-container {
+  height: auto;
+  max-width: 60%;
+}
+@media (max-width:800px) {
+  header .header-img-container {
+    max-width: 98%;
+  }
+}
+header .header-img-container img {
+  border-radius: 20px;
+}
+header p {
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width:800px) {
+  header p {
+    max-width: 98%;
+  }
 }
 body nav,
 body footer {
@@ -184,7 +252,7 @@ body footer {
   align-items: center;
   padding: 20px 0px;
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav,
   body footer {
     height: 120px;
@@ -258,7 +326,7 @@ body footer navbar {
     justify-content: flex-start;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav navbar,
   body footer navbar {
     flex-direction: column;
@@ -289,7 +357,7 @@ body footer a nav-item {
     margin: 5px;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav a nav-item,
   body footer a nav-item {
     font-size: 15px;
@@ -313,33 +381,94 @@ body footer a nav-item:active {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 750px;
+}
+@media (max-width:1000px) {
+  .container .cta {
+    height: 900px;
+  }
+}
+@media (max-width:800px) {
+  .container .cta {
+    height: 1200px;
+  }
+}
+@media (max-width:515px) {
+  .container .cta {
+    height: 1500px;
+  }
+}
+.container .cta .card7 {
+  margin: 0 auto;
 }
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
-  background: #edf4ed;
+  background: #c4d6b0;
   border-radius: 10px;
-  padding: 2%;
-  margin: 2%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 45%;
+  justify-content: space-around;
+  max-width: 32%;
 }
-.container .cta .cta-card .top {
+@media (max-width:1000px) {
+  .container .cta .cta-card {
+    max-width: 47%;
+  }
+}
+@media (max-width:515px) {
+  .container .cta .cta-card {
+    max-width: 100%;
+  }
+}
+.container .cta .cta-card .cta-top {
   width: 100%;
-  margin-bottom: 10px;
+  height: 65px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  background: #edf4ed;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 1px;
 }
-.container .cta .img-container {
-  height: 50px;
+@media (max-width:800px) {
+  .container .cta .cta-card .cta-top {
+    height: 90px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 }
-.container .cta .img-container img {
-  border-radius: 5px;
-  height: 50px;
+@media (max-width:515px) {
+  .container .cta .cta-card .cta-top {
+    height: 65px;
+    flex-direction: row;
+  }
+}
+.container .cta .cta-card .cta-top h4 {
+  padding: 5px 0 0 5px;
+}
+@media (max-width:800px) {
+  .container .cta .cta-card .cta-top h4 {
+    font-size: 2rem;
+  }
+}
+.container .cta .cta-card .cta-top img {
+  padding: 15px;
+}
+.container .cta .cta-text {
+  padding: 2%;
+}
+.container .cta .logo-img-container {
+  margin-top: 2px;
+  height: 70px;
+}
+.container .cta .logo-img-container img {
+  border-radius: 40px;
+  height: 70px;
 }
 body footer {
   margin: 20px 0px;

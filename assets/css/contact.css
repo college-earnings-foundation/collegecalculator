@@ -1,3 +1,13 @@
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexbox-container {
+  margin: 5% 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -164,15 +174,73 @@ img {
   height: auto;
 }
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 10px;
   background: #edf4ed;
-  margin-top: 30px;
 }
 body {
   background: #79b791;
+}
+header {
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: double 5px #301014;
+  background: #c4d6b0;
+}
+@media (max-width:800px) {
+  header {
+    height: 750px;
+    justify-content: flex-start;
+  }
+}
+@media (max-width:515px) {
+  header {
+    height: 700px;
+  }
+}
+header h1 {
+  margin: 0 auto;
+}
+@media (max-width:800px) {
+  header h1 {
+    margin: 15px auto;
+  }
+}
+header .header-bottom {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width:800px) {
+  header .header-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header .header-img-container {
+  height: auto;
+  max-width: 60%;
+}
+@media (max-width:800px) {
+  header .header-img-container {
+    max-width: 98%;
+  }
+}
+header .header-img-container img {
+  border-radius: 20px;
+}
+header p {
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width:800px) {
+  header p {
+    max-width: 98%;
+  }
 }
 body nav,
 body footer {
@@ -184,7 +252,7 @@ body footer {
   align-items: center;
   padding: 20px 0px;
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav,
   body footer {
     height: 120px;
@@ -258,7 +326,7 @@ body footer navbar {
     justify-content: flex-start;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav navbar,
   body footer navbar {
     flex-direction: column;
@@ -289,7 +357,7 @@ body footer a nav-item {
     margin: 5px;
   }
 }
-@media (max-width:500px) {
+@media (max-width:515px) {
   body nav a nav-item,
   body footer a nav-item {
     font-size: 15px;
