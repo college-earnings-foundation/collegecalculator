@@ -1,10 +1,5 @@
 //out:false
 body {
-  // @font-color: @eggplant;
-  // @main-bg: @green;
-  // @expand-bg: @lt-green;
-  // @expand-font-color: @blue;
-  // @border-color: @white;
 
   nav,
   footer {
@@ -121,6 +116,15 @@ body {
           box-shadow: none;
         }
       }
+    }
+  }
+
+  nav {
+    position: fixed;
+    margin-top: -10px;
+    @media @mobile{
+      position: relative;
+      margin-top:-10px;
     }
   }
 }
