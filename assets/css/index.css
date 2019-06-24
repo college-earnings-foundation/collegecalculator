@@ -394,7 +394,7 @@ body footer a nav-item:active {
   justify-content: space-around;
   max-width: 32%;
 }
-@media (max-width:1000px) {
+@media (min-width:801px) {
   .container .cta .cta-card {
     max-width: 47%;
   }
@@ -459,4 +459,62 @@ body .copyright {
   justify-content: center;
   padding: 20px;
   font-size: 15px;
+}
+@media (min-width:801px) {
+  .opener {
+    height: 100vh;
+    width: 100vw;
+    animation-name: example;
+    animation-delay: 1.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes example {
+    0% {
+      height: 100%;
+      width: 75%;
+      margin-left: 15%;
+    }
+    25% {
+      height: 25%;
+      width: 50%;
+      transform: rotate(90deg);
+    }
+    65% {
+      height: 50%;
+      width: 75%;
+      transform: rotate(180deg);
+      margin-left: 20%;
+    }
+    100% {
+      height: 0%;
+      width: 0%;
+      transform: rotate(360deg);
+      margin-left: 0%;
+    }
+  }
+}
+@media (max-width:800px) {
+  .opener {
+    max-height: 100vh;
+    max-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+    animation-name: small;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes small {
+    0% {
+      height: 100vh;
+      width: 100vw;
+    }
+    100% {
+      height: 0vh;
+      width: 100vw;
+    }
+  }
 }
