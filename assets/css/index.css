@@ -417,7 +417,7 @@ body nav {
 }
 @media (max-width:1000px) {
   .container .cta .cta-card {
-    max-width: 47%;
+    max-width: 44%;
   }
 }
 @media (max-width:515px) {
