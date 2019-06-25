@@ -10,12 +10,15 @@
 
 //home-page (index.html) less content starts here:
 .opener {
+
+
   @media @desk {
     height: 100vh;
     width: 100vw;
     animation-name: example;
-    animation-delay: 1.5s;
-    animation-duration: 2s;
+    // animation-delay: 1.5s;
+    // animation-duration: 2s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 
@@ -50,14 +53,13 @@
   }
 
   @media @tablet {
-    // max-height: 100vh;
-    // max-width: 97vw;
     height: 100vh;
     width: 98vw;
     animation-name: small;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
+    // animation-delay: 1.5s;
+    // animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-duration: .5s;
     animation-iteration-count: 1;
 
     @keyframes small {
@@ -72,4 +74,8 @@
 
     }
   }
+}
+
+nav {
+  margin-top: -10px;
 }
