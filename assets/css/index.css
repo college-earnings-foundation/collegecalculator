@@ -497,8 +497,7 @@ body .copyright {
     height: 100vh;
     width: 100vw;
     animation-name: example;
-    animation-delay: 1.5s;
-    animation-duration: 2s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
   }
@@ -532,9 +531,8 @@ body .copyright {
     height: 100vh;
     width: 98vw;
     animation-name: small;
-    animation-delay: 1.5s;
-    animation-duration: 1s;
     animation-fill-mode: forwards;
+    animation-duration: .5s;
     animation-iteration-count: 1;
   }
   @keyframes small {
