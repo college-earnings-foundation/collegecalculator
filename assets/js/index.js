@@ -3,12 +3,20 @@ console.log("index.js is linked to the index.html file");
 class TabCard {
   constructor(card) {
     this.card = card;
-    console.log(this);
+    this.fullParagraphArr = [];
     this.fullParagraph = card.querySelector("p");
-    console.log(this.fullParagraph);
-    // this.charLimitParagraph = fullParagraph.substring(0, 100);
-    // console.log(this.charLimitParagraph);
+    this.fullParagraphArr.push(this.fullParagraph);
+    console.log(this.fullParagraphArr);
+    this.charLimitParagraph = this.fullParagraph.textContent.substring(0, 100);
+    this.displayedText = this.charLimitParagraph + "...";
+    this.adjustedParagraph = card.querySelector("p");
+    this.adjustedParagraph.textContent = this.displayedText;
+    console.log(this.adjustedParagraph);
+    this.card.addEventListener("click", event => {
+      this.changeContent();
+    });
   }
+  changeContent() {}
 }
 
 allTabs = document
