@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .flexbox-container {
-  margin: 10px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +151,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
+  font-family: Arial, "Times New Roman", sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -403,30 +403,28 @@ body nav {
   }
 }
 .container .cta {
-  margin: 10px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-content: space-between;
+  align-content: space-around;
 }
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
   background: #c4d6b0;
   border-radius: 10px;
-  margin: 10px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  width: 32%;
   justify-content: space-around;
-  max-width: 32%;
+  max-width: 31%;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
   .container .cta .cta-card {
-    max-width: 47%;
-    width: 47%;
+    max-width: 44%;
   }
 }
 @media (max-width:515px) {
@@ -473,6 +471,9 @@ body nav {
 }
 .container .cta .cta-text {
   padding: 2%;
+}
+.container .cta .hidden-text {
+  display: none;
 }
 .container .cta .logo-img-container {
   margin-top: 2px;

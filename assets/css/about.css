@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .flexbox-container {
-  margin: 10px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +151,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
+  font-family: Arial, "Times New Roman", sans-serif;
 }
 h1 {
   font-size: 4rem;
