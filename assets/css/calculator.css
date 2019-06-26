@@ -472,9 +472,6 @@ body nav {
 .container .cta .cta-text {
   padding: 2%;
 }
-.container .cta .hidden-text {
-  display: none;
-}
 .container .cta .logo-img-container {
   margin-top: 2px;
   height: 70px;
