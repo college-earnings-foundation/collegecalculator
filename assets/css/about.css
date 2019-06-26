@@ -414,3 +414,38 @@ body .copyright {
 nav {
   top: 0;
 }
+.bios {
+  margin: 10px auto;
+  background: #c4d6b0;
+}
+.bios,
+.bios .bio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.bios,
+.bios .bio,
+.bios img,
+.bios .bio img {
+  border: solid 2px black;
+  border-radius: 10px;
+}
+.bios .bio {
+  background: white;
+  flex-direction: column;
+  width: 40vw;
+}
+.bios .bio img {
+  max-width: 90%;
+  height: 40vh;
+  margin: 10px auto;
+}
+.bios .bio h3 {
+  font-weight: bolder;
+  font-size: 20px;
+}
+.bios .bio p {
+  font-size: 15px;
+}

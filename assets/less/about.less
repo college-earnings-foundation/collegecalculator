@@ -11,3 +11,36 @@
 nav {
   top: 0;
 }
+.bios {
+  margin: 10px auto;
+  background: @lt-green;
+  &,
+  .bio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    &,
+    img {
+      border: solid 2px black;
+      border-radius: 10px;
+    }
+  }
+  .bio {
+    background: white;
+    flex-direction: column;
+    width: 40vw;
+    img {
+      max-width: 90%;
+      height: 40vh;
+      margin: 10px auto;
+    }
+    h3 {
+      font-weight: bolder;
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}

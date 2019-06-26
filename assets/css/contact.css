@@ -414,3 +414,18 @@ body .copyright {
 nav {
   top: 0;
 }
+.form {
+  margin: 10px auto;
+  background: #c4d6b0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+  font-size: 15px;
+}
+#after {
+  display: none;
+}
