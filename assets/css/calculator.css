@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .flexbox-container {
-  margin: 5px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +151,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Indie Flower", cursive;
+  font-family: Arial, "Times New Roman", sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -173,70 +173,81 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
+body {
+  background: #79b791;
+}
+body .container {
   max-width: 95vw;
   width: 100%;
-  margin: 10px auto;
+  margin: 120px auto 10px;
   padding: 15px;
   background: #edf4ed;
   border-radius: 10px;
   border: 1px solid black;
 }
-body {
-  background: #79b791;
+@media (max-width:800px) {
+  body .container {
+    margin: 120px auto;
+  }
 }
-header {
+@media (max-width:515px) {
+  body .container {
+    margin: 10px auto;
+  }
+}
+body header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border: double 5px #301014;
   background: #c4d6b0;
+  border-radius: 10px;
 }
 @media (max-width:800px) {
-  header {
+  body header {
     justify-content: flex-start;
   }
 }
 @media (max-width:515px) {
 }
-header h1 {
+body header h1 {
   margin: 5px auto;
 }
 @media (max-width:800px) {
-  header h1 {
+  body header h1 {
     margin: 15px auto;
   }
 }
-header .header-bottom {
+body header .header-bottom {
   display: flex;
   justify-content: space-around;
   margin: 10px;
 }
 @media (max-width:800px) {
-  header .header-bottom {
+  body header .header-bottom {
     flex-direction: column;
     align-items: center;
   }
 }
-header .header-img-container {
+body header .header-img-container {
   max-height: 90%;
   max-width: 60%;
 }
 @media (max-width:800px) {
-  header .header-img-container {
+  body header .header-img-container {
     max-width: 98%;
   }
 }
-header .header-img-container img {
+body header .header-img-container img {
   border-radius: 20px;
 }
-header p {
+body header p {
   max-width: 35%;
   display: flex;
   justify-content: flex-start;
 }
 @media (max-width:800px) {
-  header p {
+  body header p {
     max-width: 98%;
   }
 }
@@ -248,12 +259,12 @@ body footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 @media (max-width:515px) {
   body nav,
   body footer {
-    height: 120px;
+    height: 90px;
     padding: 2px;
   }
 }
@@ -280,6 +291,12 @@ body footer .logo {
   border: 4px solid #edf4ed;
   box-shadow: 2px 2px 5px #301014;
 }
+body nav .title,
+body footer .title,
+body nav .logo,
+body footer .logo {
+  max-height: 82px;
+}
 body nav .title:active,
 body footer .title:active,
 body nav .logo:active,
@@ -288,8 +305,9 @@ body footer .logo:active {
 }
 body nav .title,
 body footer .title {
-  width: 15vw;
-  height: 10vw;
+  max-width: 163px;
+  width: 12vw;
+  height: 6vw;
   border-radius: 20px;
 }
 @media (max-width:800px) {
@@ -300,8 +318,9 @@ body footer .title {
 }
 body nav .logo,
 body footer .logo {
-  width: 8vw;
-  height: 8vw;
+  max-width: 82px;
+  width: 6vw;
+  height: 6vw;
   border-radius: 50%;
 }
 @media (max-width:800px) {
@@ -346,7 +365,7 @@ body footer a nav-item {
   border: 2px solid #301014;
   box-shadow: 2px 2px 5px #301014;
   border-radius: 5px;
-  padding: 15px 5px;
+  padding: 8px 5px;
 }
 @media (max-width:800px) {
   body nav a nav-item,
@@ -359,6 +378,7 @@ body footer a nav-item {
   body nav a nav-item,
   body footer a nav-item {
     font-size: 15px;
+    padding: 1px;
   }
 }
 body nav a nav-item:hover,
@@ -374,34 +394,43 @@ body footer a nav-item:active {
   border: 2px solid #301014;
   box-shadow: none;
 }
+body nav {
+  position: fixed;
+}
+@media (max-width:515px) {
+  body nav {
+    position: relative;
+  }
+}
 .container .cta {
-  margin: 5px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-evenly;
+  align-content: space-around;
 }
 .container .cta .cta-card {
   border: 2px solid #301014;
   box-shadow: 8px 8px 20px #301014;
   background: #c4d6b0;
   border-radius: 10px;
-  margin: 5px 0;
+  margin: 10px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-width: 32%;
+  max-width: 31%;
 }
 @media (max-width:1000px) {
   .container .cta .cta-card {
-    max-width: 47%;
+    max-width: 44%;
   }
 }
 @media (max-width:515px) {
   .container .cta .cta-card {
     max-width: 100%;
+    width: 100%;
   }
 }
 .container .cta .cta-card .cta-top {
@@ -459,4 +488,7 @@ body .copyright {
   justify-content: center;
   padding: 20px;
   font-size: 15px;
+}
+nav {
+  top: 0;
 }
