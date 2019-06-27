@@ -39,8 +39,14 @@ body {
     .logo {
       max-height: 82px;
 
+      &:hover {
+        box-shadow: 2px 2px 5px @white;
+        border: @blue 2px solid;
+      }
+
       &:active {
         box-shadow: none;
+        border:none;
       }
     }
 
@@ -111,7 +117,8 @@ body {
         &:hover {
           background: @blue;
           color: @white;
-          border: 3px solid @white;
+          box-shadow: 2px 2px 5px @white;
+          // border: 3px solid @white;
         }
 
         &:active {
