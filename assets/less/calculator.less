@@ -14,6 +14,11 @@ nav {
 }
 
 .cta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
   .toggle-title {
     display: none;
   }
@@ -23,7 +28,18 @@ nav {
   }
 
   .toggle-input {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    h4 {
+      font-size: 4rem;
+    }
+    input {
+      background: none;
+      color: white;
+    }
   }
 
   .input-note {
