@@ -26,8 +26,9 @@ nav {
   }
 
   .bio {
-    border: solid 2px #fff;
-    // background: white;
+    // border: solid 2px #fff;
+    box-shadow: 0px 0px 5px #fff;
+    background: linear-gradient(#720000, #fff, #720000, #720000, #0e0e0e);
     flex-direction: column;
     width: 40vw;
 
@@ -56,28 +57,37 @@ nav {
 
       a {
         text-decoration: none;
-        color: @eggplant;
         margin: 2px;
 
         i {
-          background: @lt-green;
-          box-shadow: 2px 2px 10px @eggplant;
-          border-radius: 20px;
-          padding: 0px;
+          background: @white;
+          color: #720000;
+          border-radius: 25px;
+          padding: 3px;
 
           &:hover {
+            box-shadow: 1px 1px 5px @white;
             background: @white;
             color: @blue;
-            border: 2px solid @blue;
+
           }
 
           &:active {
-            border: 2px solid @white;
+            box-shadow: none;
             color: @white;
             background: @eggplant;
           }
         }
       }
+    }
+  }
+
+  @media @tablet {
+    flex-direction: column;
+
+    &,
+    .bio {
+      width: 100%;
     }
   }
 }

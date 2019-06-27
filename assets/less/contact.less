@@ -16,19 +16,47 @@ nav {
   margin: 10px auto;
   // background: @lt-green;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   padding: 10px;
+
   // border: solid 2px black;
-  border-radius: 10px;
-  font-size: 15px;
+  &,
+  input,
+  textarea {
+    font-size: 25px;
+    font-weight: bolder;
+    line-height: 28px;
+    width: 50vw;
+    margin: 20px auto;
+
+    @media @tablet {
+
+      &,
+      #submit_button {
+        width: 70vw;
+      }
+    }
+
+    @media @mobile {
+
+      &,
+      #submit_button {
+        width: 80vw;
+      }
+    }
+  }
 
   #submit_button {
-    background: none;
     border: none;
-    // border: 1px solid #fff;
-    box-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 2px #fff;
+    color: #720000;
+    background: #fff;
+
+    &:hover {
+      background: #220b0b;
+      color: #fff;
+    }
 
     &:active {
       box-shadow: none;

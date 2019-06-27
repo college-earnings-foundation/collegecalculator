@@ -138,9 +138,9 @@ table {
 }
 * {
   box-sizing: border-box;
-  color: #edf4ed;
 }
 html {
+  color: #edf4ed;
   font-size: 62.5%;
 }
 html,
@@ -285,11 +285,19 @@ body nav .logo,
 body footer .logo {
   max-height: 82px;
 }
+body nav .title:hover,
+body footer .title:hover,
+body nav .logo:hover,
+body footer .logo:hover {
+  box-shadow: 2px 2px 5px #edf4ed;
+  border: #477998 2px solid;
+}
 body nav .title:active,
 body footer .title:active,
 body nav .logo:active,
 body footer .logo:active {
   box-shadow: none;
+  border: none;
 }
 body nav .title,
 body footer .title {
@@ -370,7 +378,7 @@ body nav a nav-item:hover,
 body footer a nav-item:hover {
   background: #477998;
   color: #edf4ed;
-  border: 3px solid #edf4ed;
+  box-shadow: 2px 2px 5px #edf4ed;
 }
 body nav a nav-item:active,
 body footer a nav-item:active {

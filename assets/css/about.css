@@ -138,9 +138,9 @@ table {
 }
 * {
   box-sizing: border-box;
-  color: #edf4ed;
 }
 html {
+  color: #edf4ed;
   font-size: 62.5%;
 }
 html,
@@ -285,11 +285,19 @@ body nav .logo,
 body footer .logo {
   max-height: 82px;
 }
+body nav .title:hover,
+body footer .title:hover,
+body nav .logo:hover,
+body footer .logo:hover {
+  box-shadow: 2px 2px 5px #edf4ed;
+  border: #477998 2px solid;
+}
 body nav .title:active,
 body footer .title:active,
 body nav .logo:active,
 body footer .logo:active {
   box-shadow: none;
+  border: none;
 }
 body nav .title,
 body footer .title {
@@ -370,7 +378,7 @@ body nav a nav-item:hover,
 body footer a nav-item:hover {
   background: #477998;
   color: #edf4ed;
-  border: 3px solid #edf4ed;
+  box-shadow: 2px 2px 5px #edf4ed;
 }
 body nav a nav-item:active,
 body footer a nav-item:active {
@@ -418,7 +426,8 @@ nav {
   padding: 10px;
 }
 .bios .bio {
-  border: solid 2px #fff;
+  box-shadow: 0px 0px 5px #fff;
+  background: linear-gradient(#720000, #fff, #720000, #720000, #0e0e0e);
   flex-direction: column;
   width: 40vw;
 }
@@ -444,22 +453,30 @@ nav {
 }
 .bios .bio .icons a {
   text-decoration: none;
-  color: #301014;
   margin: 2px;
 }
 .bios .bio .icons a i {
-  background: #c4d6b0;
-  box-shadow: 2px 2px 10px #301014;
-  border-radius: 20px;
-  padding: 0px;
+  background: #edf4ed;
+  color: #720000;
+  border-radius: 25px;
+  padding: 3px;
 }
 .bios .bio .icons a i:hover {
+  box-shadow: 1px 1px 5px #edf4ed;
   background: #edf4ed;
   color: #477998;
-  border: 2px solid #477998;
 }
 .bios .bio .icons a i:active {
-  border: 2px solid #edf4ed;
+  box-shadow: none;
   color: #edf4ed;
   background: #301014;
+}
+@media (max-width:800px) {
+  .bios {
+    flex-direction: column;
+  }
+  .bios,
+  .bios .bio {
+    width: 100%;
+  }
 }
