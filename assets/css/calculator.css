@@ -495,6 +495,12 @@ body .copyright {
 nav {
   top: 0;
 }
+.cta-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
 .cta-card .toggle-title {
   display: none;
 }
@@ -512,6 +518,7 @@ nav {
 }
 .cta-card .toggle-input input {
   background: none;
+  color: white;
 }
 .cta-card .input-note {
   display: none;
