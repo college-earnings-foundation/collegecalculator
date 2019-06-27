@@ -493,9 +493,9 @@ nav {
 .cta-card .titleImage {
   display: block;
 }
+.cta-card .toggle-input {
+  display: block;
+}
 .cta-card .input-note {
   display: none;
-}
-.cta-card .input-toggle {
-  display: block;
 }
