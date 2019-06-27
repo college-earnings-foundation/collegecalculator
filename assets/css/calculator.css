@@ -494,7 +494,16 @@ nav {
   display: block;
 }
 .cta-card .toggle-input {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.cta-card .toggle-input h4 {
+  font-size: 4rem;
+}
+.cta-card .toggle-input input {
+  background: none;
 }
 .cta-card .input-note {
   display: none;
