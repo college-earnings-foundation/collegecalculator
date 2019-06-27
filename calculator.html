@@ -7,6 +7,7 @@
     <title>College Calculator-Calculator</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/calculator.css" />
     <script defer="defer" src="assets\js\calculator.js"></script>
+    <script async src="assets/js/signIn.js"></script>
     <link
       rel="shortcut icon"
       href="./images/CollegeCalculatorLogo.png"
@@ -36,9 +37,27 @@
         <a href="calculator.html"><nav-item>Calculator</nav-item> </a
         ><a href="about.html"><nav-item>About</nav-item> </a
         ><a href="contact.html"><nav-item>Contact</nav-item> </a>
+        <nav-item class="signin">Sign In</nav-item>
       </navbar>
     </nav>
     <div class="container">
+      <div class="credentials hidden">
+        <form>
+          <input
+            class="username"
+            placeholder="Username"
+            type="text"
+            autocomplete="username"
+          />
+          <input
+            placeholder="Password"
+            autocomplete="current-password"
+            type="password"
+          />
+        </form>
+        <button class="login">Login</button>
+      </div>
+      <div class="welcome hidden"></div>
       <header>
         <h1>Own Your Journey</h1>
         <div class="header-bottom">

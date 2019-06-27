@@ -243,6 +243,25 @@ body header p {
     max-width: 98%;
   }
 }
+.credentials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 0px;
+}
+.credentials input {
+  margin: 5px;
+}
+.welcome {
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 15px;
+  margin-bottom: 40px;
+}
+.hidden {
+  display: none;
+}
 body nav,
 body footer {
   width: 100%;
@@ -269,7 +288,14 @@ body footer .logostamp {
   body nav .logostamp,
   body footer .logostamp {
     justify-content: flex-end;
-    width: 25%;
+    width: 20%;
+  }
+}
+@media (max-width:515px) {
+  body nav .logostamp,
+  body footer .logostamp {
+    justify-content: flex-end;
+    width: 40%;
   }
 }
 body nav .title,
@@ -335,7 +361,7 @@ body footer navbar {
 @media (max-width:800px) {
   body nav navbar,
   body footer navbar {
-    justify-content: flex-start;
+    width: 80%;
   }
 }
 @media (max-width:515px) {
@@ -345,14 +371,15 @@ body footer navbar {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
+    width: 60%;
   }
 }
 body nav a,
 body footer a {
   text-decoration: none;
 }
-body nav a nav-item,
-body footer a nav-item {
+body nav nav-item,
+body footer nav-item {
   color: #301014;
   font-weight: bolder;
   font-size: 20px;
@@ -361,27 +388,27 @@ body footer a nav-item {
   padding: 8px 5px;
 }
 @media (max-width:800px) {
-  body nav a nav-item,
-  body footer a nav-item {
+  body nav nav-item,
+  body footer nav-item {
     padding: 5px;
     margin: 5px;
   }
 }
 @media (max-width:515px) {
-  body nav a nav-item,
-  body footer a nav-item {
+  body nav nav-item,
+  body footer nav-item {
     font-size: 15px;
     padding: 1px;
   }
 }
-body nav a nav-item:hover,
-body footer a nav-item:hover {
+body nav nav-item:hover,
+body footer nav-item:hover {
   background: #477998;
   color: #edf4ed;
   box-shadow: 2px 2px 5px #edf4ed;
 }
-body nav a nav-item:active,
-body footer a nav-item:active {
+body nav nav-item:active,
+body footer nav-item:active {
   background: #edf4ed;
   color: #301014;
   border: 2px solid #301014;

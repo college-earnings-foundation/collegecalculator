@@ -7,12 +7,13 @@
     <title>College Calculator-Home</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <script defer="defer" src="assets/js/index.js"></script>
+    <script async src="assets/js/signIn.js"></script>
     <link
       rel="shortcut icon"
       href="./images/CollegeCalculatorLogo.png"
       type="image/x-icon"
     />
-     <link
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
@@ -37,9 +38,27 @@
         <a href="calculator.html"><nav-item>Calculator</nav-item> </a
         ><a href="about.html"><nav-item>About</nav-item> </a
         ><a href="contact.html"><nav-item>Contact</nav-item> </a>
+        <nav-item class="signin">Sign In</nav-item>
       </navbar>
     </nav>
     <div class="container">
+      <div class="credentials hidden">
+        <form>
+          <input
+            class="username"
+            placeholder="Username"
+            type="text"
+            autocomplete="username"
+          />
+          <input
+            placeholder="Password"
+            autocomplete="current-password"
+            type="password"
+          />
+        </form>
+        <button class="login">Login</button>
+      </div>
+      <div class="welcome hidden"></div>
       <header>
         <h1>Calculate Your College Value Today!</h1>
         <div class="header-bottom">

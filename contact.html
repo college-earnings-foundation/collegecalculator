@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>College Calculator-Contact</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/contact.css" />
-    <!-- <script src="assets/js/index.js"></script> -->
+    <script async src="assets/js/signIn.js"></script>
     <link
       rel="shortcut icon"
       href="./images/CollegeCalculatorLogo.png"
@@ -33,12 +33,21 @@
         /></a>
       </div>
       <navbar>
-        <a href="calculator.html"><nav-item>Calculator</nav-item> </a
-        ><a href="about.html"><nav-item>About</nav-item> </a
+        <a href="calculator.html"><nav-item>Calculator</nav-item> </a>
+        <a href="about.html"><nav-item>About</nav-item> </a
         ><a href="contact.html"><nav-item>Contact</nav-item> </a>
+        <nav-item class="signin">Sign In</nav-item></a>
       </navbar>
     </nav>
     <div class="container">
+      <div class="credentials hidden">
+        <form>
+          <input class="username" placeholder="Username" type="text" autocomplete="username">
+          <input placeholder="Password" autocomplete="current-password" type="password">
+        </form>
+        <button class="login">Login</button>
+      </div>
+      <div class="welcome hidden"></div>
       <header>
         <h1>Contact Us</h1>
         <div class="header-bottom">
@@ -83,8 +92,7 @@
             />
           </div>
           <div>
-            <label class="required" for="message">Your message:</label
-            ><br />
+            <label class="required" for="message">Your message:</label><br />
             <textarea
               id="message"
               class="input"
