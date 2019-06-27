@@ -487,12 +487,15 @@ body .copyright {
 nav {
   top: 0;
 }
-.cta-card .hidden {
+.cta-card .toggle-title {
   display: none;
 }
 .cta-card .titleImage {
   display: block;
 }
 .cta-card .input-note {
+  display: none;
+}
+.cta-card .input-toggle {
   display: block;
 }
