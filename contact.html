@@ -6,11 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>College Calculator-Contact</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/contact.css" />
-    <!-- <script src="assets/js/index.js"></script> -->
+    <script async src="assets/js/signIn.js"></script>
     <link
       rel="shortcut icon"
       href="./images/CollegeCalculatorLogo.png"
       type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -27,12 +33,21 @@
         /></a>
       </div>
       <navbar>
-        <a href="calculator.html"><nav-item>Calculator</nav-item> </a
-        ><a href="about.html"><nav-item>About</nav-item> </a
+        <a href="calculator.html"><nav-item>Calculator</nav-item> </a>
+        <a href="about.html"><nav-item>About</nav-item> </a
         ><a href="contact.html"><nav-item>Contact</nav-item> </a>
+        <nav-item class="signin">Sign In</nav-item></a>
       </navbar>
     </nav>
     <div class="container">
+      <div class="credentials hidden">
+        <form>
+          <input class="username" placeholder="Username" type="text" autocomplete="username">
+          <input placeholder="Password" autocomplete="current-password" type="password">
+        </form>
+        <button class="login">Login</button>
+      </div>
+      <div class="welcome hidden"></div>
       <header>
         <h1>Contact Us</h1>
         <div class="header-bottom">
@@ -53,7 +68,7 @@
           Thank you for your submission, we will get in touch with you as soon
           as we can!
         </div>
-        <form action="#" method="POST">
+        <form action="#" method="">
           <div>
             <label class="required" for="name">Your name:</label><br />
             <input

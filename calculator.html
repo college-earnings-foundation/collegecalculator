@@ -7,10 +7,17 @@
     <title>College Calculator-Calculator</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/calculator.css" />
     <script defer="defer" src="assets\js\calculator.js"></script>
+    <script async src="assets/js/signIn.js"></script>
     <link
       rel="shortcut icon"
       href="./images/CollegeCalculatorLogo.png"
       type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -30,9 +37,27 @@
         <a href="calculator.html"><nav-item>Calculator</nav-item> </a
         ><a href="about.html"><nav-item>About</nav-item> </a
         ><a href="contact.html"><nav-item>Contact</nav-item> </a>
+        <nav-item class="signin">Sign In</nav-item>
       </navbar>
     </nav>
     <div class="container">
+      <div class="credentials hidden">
+        <form>
+          <input
+            class="username"
+            placeholder="Username"
+            type="text"
+            autocomplete="username"
+          />
+          <input
+            placeholder="Password"
+            autocomplete="current-password"
+            type="password"
+          />
+        </form>
+        <button class="login">Login</button>
+      </div>
+      <div class="welcome hidden"></div>
       <header>
         <h1>Own Your Journey</h1>
         <div class="header-bottom">
@@ -53,73 +78,88 @@
       </header>
       <section class="cta">
         <div data-tab="1" class="cta-card">
-          <div class="hidden titleImage">
-            <h2>Room/Board</h2>
+          <h2>Room/Board</h2>
+          <div class="toggle-title titleImage">
             <img src="images\room&board.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Input Cost:</h4>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Input Cost:</h4>
+            <input class="input" type="number" />
           </div>
         </div>
+
         <div data-tab="2" class="cta-card">
-          <div class="hidden titleImage">
           <h2>Tuition</h2>
-          <img src="images\tuition.jpg" alt="" />
+          <div class="toggle-title titleImage">
+            <img src="images\tuition.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Input Cost:</h4>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Input Cost:</h4>
+            <input class="input" type="number" />
           </div>
         </div>
+
         <div data-tab="3" class="cta-card">
-          <div class="hidden titleImage">
           <h2>Books</h2>
-          <img src="images\books.jpg" alt="" />
+          <div class="toggle-title titleImage">
+            <img src="images\books.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Input Cost:</h4>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Input Cost:</h4>
+            <input class="input" type="number" />
           </div>
         </div>
+
         <div data-tab="4" class="cta-card">
-          <div class="hidden titleImage">
           <h2>Food</h2>
-          <img src="images\food.jpg" alt="" />
+          <div class="toggle-title titleImage">
+            <img src="images\food.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Input Cost:</h4>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Input Cost:</h4>
+            <input class="input" type="number" />
           </div>
         </div>
+
         <div data-tab="5" class="cta-card">
-          <div class="hidden titleImage">
           <h2>Scholarships</h2>
-          <img src="images\scholarship.jpg" alt="" />
+          <div class="toggle-title titleImage">
+            <img src="images\scholarship.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Input Cost:</h4>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Input Cost:</h4>
+            <input class="input" type="number" />
           </div>
         </div>
+
         <div data-tab="6" class="cta-card">
-          <div class="hidden titleImage">
           <h2>Transport</h2>
-          <img src="images\transportation.jpg" alt="" />
+          <div class="toggle-title titleImage">
+            <img src="images\transportation.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Input Cost:</h4>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Input Cost:</h4>
+            <input class="input" type="number" />
           </div>
         </div>
+
         <div data-tab="7" class="cta-card">
-          <div class="hidden titleImage">
           <h2>Total Cost</h2>
-          <img src="images\total.jpg" alt="" />
+          <div class="toggle-title titleImage">
+            <img src="images\total.jpg" alt="" />
           </div>
-            <div class="hidden input-note">
-              <h4>Total Cost:</div>
-            <input class="input" type="text" />
+
+          <div class="toggle-input input-note">
+            <h4>Total Cost:</h4>
+            <div class="output-total">
+              <input class="input" type="number" />
+            </div>
           </div>
         </div>
       </section>

@@ -7,10 +7,17 @@
     <title>College Calculator-About</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/about.css" />
     <!-- <script src="assets/js/index.js"></script> -->
+    <script async src="assets/js/signIn.js"></script>
     <link
       rel="shortcut icon"
       href="./images/CollegeCalculatorLogo.png"
       type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -30,9 +37,27 @@
         <a href="calculator.html"><nav-item>Calculator</nav-item> </a
         ><a href="about.html"><nav-item>About</nav-item> </a
         ><a href="contact.html"><nav-item>Contact</nav-item> </a>
+        <nav-item class="signin">Sign In</nav-item>
       </navbar>
     </nav>
     <div class="container">
+      <div class="credentials hidden">
+        <form>
+          <input
+            class="username"
+            placeholder="Username"
+            type="text"
+            autocomplete="username"
+          />
+          <input
+            placeholder="Password"
+            autocomplete="current-password"
+            type="password"
+          />
+        </form>
+        <button class="login">Login</button>
+      </div>
+      <div class="welcome hidden"></div>
       <header>
         <h1>About Our Team</h1>
         <div class="header-bottom">
@@ -54,6 +79,27 @@
           <img src="images/football.jfif" alt="Chris Cruz Mugshot" />
           <h3>Christopher Cruz</h3>
           <p>Christopher is a man of many talents who loves to code!</p>
+          <div class="icons">
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook"></i></a
+            ><a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i></a
+            ><a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i></a
+            ><a href="https://www.linkedin.com">
+              <i class="fab fa-linkedin"></i></a
+            ><a href="https://www.github.com"> <i class="fab fa-github"></i> </a
+            ><a href="https://www.snapchat.com">
+              <i class="fab fa-snapchat"></i></a
+            ><a href="https://www.pinterest.com">
+              <i class="fab fa-pinterest"></i></a
+            ><a href="https://www.whatsapp.com">
+              <i class="fab fa-whatsapp"></i></a
+            ><a href="https://www.reddit.com"><i class="fab fa-reddit"></i></a
+            ><a href="https://www.youtube.com">
+              <i class="fab fa-youtube"></i
+            ></a>
+          </div>
         </div>
         <div class="bio" id="bio-right">
           <img src="images/carryingBooks.jfif" alt="Caleb Redd Mugshot" />
@@ -62,6 +108,27 @@
             Caleb is a jack of all trades master of none, but that's what makes
             him so much fun!
           </p>
+          <div class="icons">
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook"></i></a
+            ><a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i></a
+            ><a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i></a
+            ><a href="https://www.linkedin.com">
+              <i class="fab fa-linkedin"></i></a
+            ><a href="https://www.github.com"> <i class="fab fa-github"></i> </a
+            ><a href="https://www.snapchat.com">
+              <i class="fab fa-snapchat"></i></a
+            ><a href="https://www.pinterest.com">
+              <i class="fab fa-pinterest"></i></a
+            ><a href="https://www.whatsapp.com">
+              <i class="fab fa-whatsapp"></i></a
+            ><a href="https://www.reddit.com"><i class="fab fa-reddit"></i></a
+            ><a href="https://www.youtube.com">
+              <i class="fab fa-youtube"></i
+            ></a>
+          </div>
         </div>
       </section>
       <footer>

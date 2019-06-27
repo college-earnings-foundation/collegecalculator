@@ -4,8 +4,8 @@ body {
   nav,
   footer {
     width: 100%;
-    background: @blue;
-    border-radius: 10px;
+    // background: @blue;
+    // border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -24,11 +24,16 @@ body {
 
       @media @tablet {
         justify-content: flex-end;
-        width: 25%;
+        width: 20%;
+      }
+
+      @media @mobile {
+        justify-content: flex-end;
+        width: 40%;
       }
     }
 
-    &,
+    // &,
     .title,
     .logo {
       border: 4px solid @border-color;
@@ -39,8 +44,14 @@ body {
     .logo {
       max-height: 82px;
 
+      &:hover {
+        box-shadow: 2px 2px 5px @white;
+        border: @blue 2px solid;
+      }
+
       &:active {
         box-shadow: none;
+        border: none;
       }
     }
 
@@ -48,7 +59,7 @@ body {
       max-width: 163px;
       width: 12vw;
       height: 6vw;
-      border-radius: 20px;
+      // border-radius: 20px;
 
       @media @tablet {
         display: none;
@@ -74,7 +85,8 @@ body {
       width: 50%;
 
       @media @tablet {
-        justify-content: flex-start;
+        // justify-content: flex-start;
+        width: 80%;
       }
 
       @media @mobile {
@@ -82,45 +94,48 @@ body {
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
+        width: 60%;
       }
     }
 
     a {
       text-decoration: none;
+    }
 
-      nav-item {
-        color: @font-color;
-        font-weight: bolder;
-        font-size: 20px;
-        background: @white;
-        border: 2px solid @font-color;
-        box-shadow: 2px 2px 5px @font-color;
-        border-radius: 5px;
-        padding: 8px 5px;
+    nav-item {
+      color: @font-color;
+      font-weight: bolder;
+      font-size: 20px;
+      background: @white;
+      // border: 2px solid @font-color;
+      box-shadow: 2px 2px 5px @font-color;
+      // border-radius: 5px;
+      padding: 8px 5px;
 
-        @media @tablet {
-          padding: 5px;
-          margin: 5px;
-        }
-
-        @media @mobile {
-          font-size: 15px;
-          padding: 1px;
-        }
-
-        &:hover {
-          background: @blue;
-          color: @white;
-          border: 3px solid @white;
-        }
-
-        &:active {
-          background: @white;
-          color: @font-color;
-          border: 2px solid @font-color;
-          box-shadow: none;
-        }
+      @media @tablet {
+        padding: 5px;
+        margin: 5px;
       }
+
+      @media @mobile {
+        font-size: 15px;
+        padding: 1px;
+      }
+
+      &:hover {
+        background: @blue;
+        color: @white;
+        box-shadow: 2px 2px 5px @white;
+        // border: 3px solid @white;
+      }
+
+      &:active {
+        background: @white;
+        color: @font-color;
+        border: 2px solid @font-color;
+        box-shadow: none;
+      }
+
     }
   }
 
