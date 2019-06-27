@@ -138,6 +138,7 @@ table {
 }
 * {
   box-sizing: border-box;
+  color: #edf4ed;
 }
 html {
   font-size: 62.5%;
@@ -174,16 +175,13 @@ img {
   height: auto;
 }
 body {
-  background: #79b791;
+  background: linear-gradient(#720000, #0e0e0e);
 }
 body .container {
   max-width: 95vw;
   width: 100%;
   margin: 120px auto 10px;
   padding: 15px;
-  background: #edf4ed;
-  border-radius: 10px;
-  border: 1px solid black;
 }
 @media (max-width:800px) {
   body .container {
@@ -199,9 +197,6 @@ body header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: double 5px #301014;
-  background: #c4d6b0;
-  border-radius: 10px;
 }
 @media (max-width:800px) {
   body header {
@@ -238,9 +233,6 @@ body header .header-img-container {
     max-width: 98%;
   }
 }
-body header .header-img-container img {
-  border-radius: 20px;
-}
 body header p {
   max-width: 35%;
   display: flex;
@@ -254,8 +246,6 @@ body header p {
 body nav,
 body footer {
   width: 100%;
-  background: #477998;
-  border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -282,8 +272,6 @@ body footer .logostamp {
     width: 25%;
   }
 }
-body nav,
-body footer,
 body nav .title,
 body footer .title,
 body nav .logo,
@@ -308,7 +296,6 @@ body footer .title {
   max-width: 163px;
   width: 12vw;
   height: 6vw;
-  border-radius: 20px;
 }
 @media (max-width:800px) {
   body nav .title,
@@ -362,9 +349,7 @@ body footer a nav-item {
   font-weight: bolder;
   font-size: 20px;
   background: #edf4ed;
-  border: 2px solid #301014;
   box-shadow: 2px 2px 5px #301014;
-  border-radius: 5px;
   padding: 8px 5px;
 }
 @media (max-width:800px) {
@@ -405,6 +390,14 @@ body nav {
 body footer {
   margin: 20px 0px;
 }
+body footer nav-item {
+  border: none;
+}
+body footer a nav-item,
+body footer .logo,
+body footer .title {
+  box-shadow: 2px 2px 5px #fff;
+}
 body .copyright {
   display: flex;
   justify-content: center;
@@ -416,7 +409,6 @@ nav {
 }
 .bios {
   margin: 10px auto;
-  background: #c4d6b0;
 }
 .bios,
 .bios .bio {
@@ -425,15 +417,8 @@ nav {
   align-items: center;
   padding: 10px;
 }
-.bios,
-.bios .bio,
-.bios img,
-.bios .bio img {
-  border: solid 2px black;
-  border-radius: 10px;
-}
 .bios .bio {
-  background: white;
+  border: solid 2px #fff;
   flex-direction: column;
   width: 40vw;
 }
