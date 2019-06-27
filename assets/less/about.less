@@ -14,7 +14,7 @@ nav {
 
 .bios {
   margin: 10px auto;
-  background: @lt-green;
+  // background: @lt-green;
 
   &,
   .bio {
@@ -23,15 +23,11 @@ nav {
     align-items: center;
     padding: 10px;
 
-    &,
-    img {
-      border: solid 2px black;
-      border-radius: 10px;
-    }
   }
 
   .bio {
-    background: white;
+    border: solid 2px #fff;
+    // background: white;
     flex-direction: column;
     width: 40vw;
 
@@ -74,10 +70,11 @@ nav {
             color: @blue;
             border: 2px solid @blue;
           }
-          &:active{
+
+          &:active {
             border: 2px solid @white;
-            color:@white;
-            background:@eggplant;
+            color: @white;
+            background: @eggplant;
           }
         }
       }

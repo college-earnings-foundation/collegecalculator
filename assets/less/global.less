@@ -1,6 +1,7 @@
 //out:false
 * {
   box-sizing: border-box;
+  color: @white;
 }
 
 html {
@@ -46,16 +47,19 @@ img {
 }
 
 body {
-  background: @green;
+  // background: @eggplant;
+  background: linear-gradient(
+    // to left,
+     #720000, #0e0e0e);
 
   .container {
     max-width: 95vw;
     width: 100%;
     margin: 120px auto 10px;
     padding: 15px;
-    background: @white;
-    border-radius: 10px;
-    border: 1px solid black;
+    // background: @white;
+    // border-radius: 10px;
+    // border: 1px solid black;
 
     @media @tablet {
       margin: 120px auto;
@@ -81,9 +85,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: double 5px @eggplant;
-    background: @lt-green;
-    border-radius:10px;
+    // border: double 5px @eggplant;
+    // background: @lt-green;
+    // border-radius:10px;
 
     h1 {
       margin: 5px auto;
@@ -113,7 +117,7 @@ body {
       }
 
       img {
-        border-radius: 20px;
+        // border-radius: 20px;
       }
     }
 
