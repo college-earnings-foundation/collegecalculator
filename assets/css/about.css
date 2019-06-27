@@ -449,3 +449,32 @@ nav {
 .bios .bio p {
   font-size: 15px;
 }
+.bios .bio .icons {
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.bios .bio .icons a {
+  text-decoration: none;
+  color: #301014;
+  margin: 2px;
+}
+.bios .bio .icons a i {
+  background: #c4d6b0;
+  box-shadow: 2px 2px 10px #301014;
+  border-radius: 20px;
+  padding: 0px;
+}
+.bios .bio .icons a i:hover {
+  background: #edf4ed;
+  color: #477998;
+  border: 2px solid #477998;
+}
+.bios .bio .icons a i:active {
+  border: 2px solid #edf4ed;
+  color: #edf4ed;
+  background: #301014;
+}
