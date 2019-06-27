@@ -442,6 +442,7 @@ body nav {
 .container .cta .cta-card button {
   background: none;
   border: none;
+  color: #fff;
   box-shadow: 1px 1px 1px #fff;
 }
 .container .cta .cta-card button:active {
