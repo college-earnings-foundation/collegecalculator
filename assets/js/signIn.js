@@ -27,7 +27,6 @@ update = function() {
 check = function() {
   if (signin.innerHTML === "Sign In") {
     signin.innerHTML = "Cancel";
-    console.log(signin);
   } else {
     signin.innerHTML = "Sign In";
   }
