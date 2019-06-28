@@ -145,14 +145,7 @@ html {
 }
 html,
 body {
-  font-family: "Roboto", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: Arial, "Times New Roman", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -469,6 +462,7 @@ nav {
 }
 .bios .bio p {
   font-size: 15px;
+  width: 85%;
 }
 .bios .bio .icons {
   font-size: 30px;
@@ -489,7 +483,7 @@ nav {
   padding: 3px;
 }
 .bios .bio .icons a i:hover {
-  box-shadow: 1px 1px 5px #edf4ed;
+  box-shadow: 0px 0px 5px #edf4ed;
   background: #edf4ed;
   color: #477998;
 }
