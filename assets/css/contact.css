@@ -444,7 +444,8 @@ nav {
 }
 .form,
 .form input,
-.form textarea {
+.form textarea,
+.form button {
   font-size: 25px;
   font-weight: bolder;
   line-height: 28px;
@@ -455,9 +456,11 @@ nav {
   .form,
   .form input,
   .form textarea,
+  .form button,
   .form #submit_button,
   .form input #submit_button,
-  .form textarea #submit_button {
+  .form textarea #submit_button,
+  .form button #submit_button {
     width: 70vw;
   }
 }
@@ -465,9 +468,11 @@ nav {
   .form,
   .form input,
   .form textarea,
+  .form button,
   .form #submit_button,
   .form input #submit_button,
-  .form textarea #submit_button {
+  .form textarea #submit_button,
+  .form button #submit_button {
     width: 80vw;
   }
 }
@@ -484,6 +489,6 @@ nav {
 .form #submit_button:active {
   box-shadow: none;
 }
-#after {
+.hidden {
   display: none;
 }
