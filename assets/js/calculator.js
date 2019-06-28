@@ -35,10 +35,18 @@ class TabCard {
 
   toggle() {
     if (this.checkCard.textContent === "Total Cost:") {
-      displayTotal = document.createElement("p");
-
-      this.titleImage.classList.remove("titleImage");
-      this.titleImage.classList.add("toggle-title");
+      let displayTotal = document.createElement("p");
+      displayTotal.textContent = numList.reduce((total, item) => {
+        return (total += item);
+      }, 0);
+      this.div = document.querySelector(".output-total");
+      this.div.appendChild(displayTotal);
+      console.log(this.div);
+      console.log(displayTotal);
+      this.input.classList.remove("input-note");
+      this.input.classList.add("toggle-input");
+      // this.titleImage.classList.remove("titleImage");
+      // this.titleImage.classList.add("toggle-title");
     } else {
       this.titleImage.classList.remove("titleImage");
       this.titleImage.classList.add("toggle-title");
