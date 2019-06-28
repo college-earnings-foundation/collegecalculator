@@ -1,7 +1,4 @@
 var signin = document.querySelector(".signin");
-var submit = document.querySelector("#submit_button");
-var after = document.querySelector("#after");
-var during = document.querySelector("#during");
 var login = document.querySelector(".login");
 var username = document.querySelector(".username");
 var welcome = document.querySelector(".welcome");
@@ -19,15 +16,11 @@ login.addEventListener("click", function() {
   check();
 });
 
-submit.addEventListener("click", function() {
-  after.classList.remove("hidden");
-  during.classList.add("hidden");
-});
-
-check = function () {
+check = function() {
   if (signin.innerHTML === "Sign In") {
     signin.innerHTML = "Cancel";
     console.log(signin);
   } else {
     signin.innerHTML = "Sign In";
-  }};
+  }
+};
