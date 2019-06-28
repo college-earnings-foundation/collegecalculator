@@ -9,14 +9,21 @@ signin.addEventListener("click", function() {
   welcome.classList.remove("hidden");
   username.select();
   welcome.innerHTML = "Welcome, please Sign In!";
+  document.addEventListener("keypress", function(e) {
+    if (e.charCode == 13) {
+      update();
+    }
+  });
+  login.addEventListener("click", function() {
+    update();
+  });
 });
-login.addEventListener("click", function() {
+update = function() {
   welcome.innerHTML = "Welcome to College Calculator " + username.value + "!";
   welcome.classList.remove("hidden");
   credentials.classList.add("hidden");
-  check();
-});
-
+  signin.innerHTML = "Sign In";
+};
 check = function() {
   if (signin.innerHTML === "Sign In") {
     signin.innerHTML = "Cancel";
