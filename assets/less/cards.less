@@ -13,17 +13,21 @@
     .flexbox-container;
     justify-content: space-around;
     max-width: 31%;
+    box-shadow: 0px 0px 5px #fff;
+    background: linear-gradient(#fff, 5%, #720000 70%, #0e0e0e 98%, #fff 100%);
+    flex-direction: column;
+    width: 40vw;
 
     button {
-  background: none;
-  border: none;
-  color:#fff;
-  // border: 1px solid #fff;
-  box-shadow: 1px 1px 1px #fff;
+      background: none;
+      border: none;
+      color: #fff;
+      // border: 1px solid #fff;
+      box-shadow: 1px 1px 1px #fff;
 
-  &:active {
-    box-shadow: none;
-  }
+      &:active {
+        box-shadow: none;
+      }
     }
 
     @media @desktop {
@@ -56,7 +60,6 @@
         height: 65px;
         flex-direction: row;
       }
-
 
       h4 {
         padding: 5px 0 0 5px;
