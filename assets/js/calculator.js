@@ -1,8 +1,13 @@
 console.log("calculator.js is linked to the calculator.html file");
 
-numList = [];
+finalOutput = document.querySelector(".output");
+
+finalOutput.addEventListener("click", event => {
+  addInputs();
+});
 
 function addInputs() {
+  let numList = [];
   boxvalue = document.querySelectorAll(".input").forEach(item => {
     if (isNaN(parseInt(item.value, 10))) {
       return null;
@@ -10,8 +15,12 @@ function addInputs() {
       numList.push(parseInt(item.value, 10));
     }
   });
-  console.log(numList);
-  return false;
+  finalTotal = numList.reduce((total, item) => {
+    return (total += item);
+  }, 0);
+  // console.log(finalTotal);
+  // console.log(numList);
+  return finalTotal;
 }
 
 class TabCard {
@@ -22,31 +31,25 @@ class TabCard {
     this.inputBox = card.querySelector("input");
     this.checkCard = card.querySelector("h4");
     // console.log(this.checkCard.textContent);
-    this.titleImage.addEventListener("click", event => {
+    this.card.addEventListener("click", event => {
       this.toggle();
     });
 
-    this.inputBox.addEventListener("keyup", event => {
-      if (event.keycode === 13 || event.which === 13) {
-        this.enterText();
-      }
-    });
+    // this.inputBox.addEventListener("keyup", event => {
+    //   if (event.keycode === 13 || event.which === 13) {
+    //     this.enterText();
+    //   }
+    // });
   }
 
   toggle() {
     if (this.checkCard.textContent === "Total Cost:") {
-      let displayTotal = document.createElement("p");
-      displayTotal.textContent = numList.reduce((total, item) => {
-        return (total += item);
-      }, 0);
-      this.div = document.querySelector(".output-total");
-      this.div.appendChild(displayTotal);
-      console.log(this.div);
+      let displayTotal = this.card.querySelector("p");
+      displayTotal.textContent = addInputs();
       console.log(displayTotal);
+
       this.input.classList.remove("input-note");
       this.input.classList.add("toggle-input");
-      // this.titleImage.classList.remove("titleImage");
-      // this.titleImage.classList.add("toggle-title");
     } else {
       this.titleImage.classList.remove("titleImage");
       this.titleImage.classList.add("toggle-title");
