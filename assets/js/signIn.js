@@ -7,6 +7,7 @@ signin.addEventListener("click", function() {
   check();
   credentials.classList.toggle("hidden");
   welcome.classList.remove("hidden");
+  username.select();
   welcome.innerHTML = "Welcome, please Sign In!";
 });
 login.addEventListener("click", function() {
