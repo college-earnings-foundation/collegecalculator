@@ -461,7 +461,7 @@ body nav {
   height: 65px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 1px;
 }
@@ -478,27 +478,14 @@ body nav {
     flex-direction: row;
   }
 }
-.container .cta .cta-card .cta-top h4 {
-  padding: 5px 0 0 5px;
-}
-@media (max-width:800px) {
-  .container .cta .cta-card .cta-top h4 {
-    font-size: 2rem;
-  }
-}
 .container .cta .cta-card .cta-top img {
   padding: 15px;
 }
 .container .cta .cta-text {
   padding: 2%;
 }
-.container .cta .logo-img-container {
-  margin-top: 2px;
-  height: 70px;
-}
-.container .cta .logo-img-container img {
-  border-radius: 20px;
-  height: 70px;
+.container .cta .icon-container {
+  font-size: 3rem;
 }
 body footer {
   margin: 20px 0px;
