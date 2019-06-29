@@ -18,8 +18,6 @@ function addInputs() {
   finalTotal = numList.reduce((total, item) => {
     return (total += item);
   }, 0);
-  // console.log(finalTotal);
-  // console.log(numList);
   return finalTotal;
 }
 
@@ -28,25 +26,28 @@ class TabCard {
     this.card = card;
     this.titleImage = card.querySelector(".titleImage");
     this.input = card.querySelector(".input-note");
-    this.inputBox = card.querySelector("input");
+    this.allTitleImages = document.querySelectorAll(".titleImage");
+    this.allInput = document.querySelectorAll(".input-note");
     this.checkCard = card.querySelector("h4");
-    // console.log(this.checkCard.textContent);
     this.card.addEventListener("click", event => {
       this.toggle();
     });
-
-    // this.inputBox.addEventListener("keyup", event => {
-    //   if (event.keycode === 13 || event.which === 13) {
-    //     this.enterText();
-    //   }
-    // });
   }
 
   toggle() {
+    this.allTitleImages.forEach(item => {
+      item.classList.add("titleImage");
+      this.titleImage.classList.remove("toggle-title");
+    });
+
+    this.allInput.forEach(item => {
+      item.classList.add("input-note");
+      item.classList.remove("toggle-input");
+    });
+
     if (this.checkCard.textContent === "Total Cost:") {
       let displayTotal = this.card.querySelector("p");
       displayTotal.textContent = addInputs();
-      console.log(displayTotal);
 
       this.input.classList.remove("input-note");
       this.input.classList.add("toggle-input");
@@ -65,4 +66,6 @@ class TabCard {
   }
 }
 
-document.querySelectorAll(".cta-card").forEach(item => new TabCard(item));
+allCards = document
+  .querySelectorAll(".cta-card")
+  .forEach(item => new TabCard(item));
