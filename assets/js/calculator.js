@@ -1,9 +1,27 @@
 console.log("calculator.js is linked to the calculator.html file");
 
+this.allTitleImages = document.querySelectorAll(".titleImage");
+this.allInput = document.querySelectorAll(".input-note");
+
+container = document.querySelector(".container");
+
+container.addEventListener("click", event => {
+  allTitleImages.forEach(item => {
+    item.classList.add("titleImage");
+    item.classList.remove("toggle-title");
+  });
+
+  allInput.forEach(item => {
+    item.classList.add("input-note");
+    item.classList.remove("toggle-input");
+  });
+});
+
 finalOutput = document.querySelector(".output");
 
 finalOutput.addEventListener("click", event => {
   addInputs();
+  event.stopPropagation();
 });
 
 function addInputs() {
@@ -31,13 +49,14 @@ class TabCard {
     this.checkCard = card.querySelector("h4");
     this.card.addEventListener("click", event => {
       this.toggle();
+      event.stopPropagation();
     });
   }
 
   toggle() {
     this.allTitleImages.forEach(item => {
       item.classList.add("titleImage");
-      this.titleImage.classList.remove("toggle-title");
+      item.classList.remove("toggle-title");
     });
 
     this.allInput.forEach(item => {
