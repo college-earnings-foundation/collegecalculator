@@ -266,7 +266,7 @@ body footer {
 @media (max-width:515px) {
   body nav,
   body footer {
-    height: 90px;
+    height: 126px;
     padding: 2px;
   }
 }
