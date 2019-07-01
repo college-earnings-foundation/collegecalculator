@@ -36,7 +36,7 @@ function addInputs() {
   finalTotal = numList.reduce((total, item) => {
     return (total += item);
   }, 0);
-  return finalTotal;
+  return "$"+finalTotal;
 }
 
 class TabCard {
