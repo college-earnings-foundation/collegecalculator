@@ -29,9 +29,18 @@ class TabCard {
     } else {
       this.displayedParagraph.textContent = this.charLimitParagraph.textContent;
     }
+    this.changeButtonText();
+  }
+  changeButtonText() {
+    console.log(this.cardButton.textContent);
+    if (this.cardButton.textContent === "expand") {
+      this.cardButton.textContent = "collapse";
+    } else {
+      this.cardButton.textContent = "expand";
+    }
   }
 }
 
-allTabs = document
+allCards = document
   .querySelectorAll(".cta-card")
   .forEach(item => new TabCard(item));
